@@ -1,0 +1,128 @@
+[
+  {
+    "source": "01_IM-45_Induction_Motor_Maintenance.pdf",
+    "page": 1,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 1 IM-45 Induction Motor Maintenance and Troubleshooting Synthetic Industrial Reference Document | Version 1.0 This document is synthetic and was created specifically as a test knowledge base for a student RAG chatbot. It is not an OEM manual and should not be used as a real-world operating procedure. 1. Equipment Overview Equipment name: IM-45 Induction Motor Training Unit. Nominal rating used in this synthetic reference: 5.5 kW, three-phase, 400 V class, 50 Hz, squirrel-cage induction motor. Parameter Reference value Rated power 5.5 kW Supply Three-phase AC, 400 V class Frequency 50 Hz Nominal speed Approximately 1470 rpm Cooling Fan-cooled enclosure Bearings Drive-end and non-drive-end rolling bearings 2. Preventive Maintenance Schedule A preventive-maintenance program should combine visual inspection, cleaning,"
+  },
+  {
+    "source": "01_IM-45_Induction_Motor_Maintenance.pdf",
+    "page": 1,
+    "chunk_id": 2,
+    "text": "nd and non-drive-end rolling bearings 2. Preventive Maintenance Schedule A preventive-maintenance program should combine visual inspection, cleaning, bearing condition checks, electrical connection checks, and operating-current observations. Interval Recommended activity Every shift Check unusual noise, vibration, smell, visible overheating, and cooling airflow. Weekly Inspect motor exterior, ventilation openings, cable entry, and mounting bolts. Every 500 operating hours Record phase currents, inspect terminal tightness after isolation, and review vibration trend. Every 2,000 operating hours Inspect bearings and cooling fan; clean internal/external airflow paths as appropriate. Annually Perform a documented condition assessment and review historical measurements for trends. Maintenance records should include date, running hours, measured current, observed vibration/noise, action taken,"
+  },
+  {
+    "source": "01_IM-45_Induction_Motor_Maintenance.pdf",
+    "page": 1,
+    "chunk_id": 3,
+    "text": "historical measurements for trends. Maintenance records should include date, running hours, measured current, observed vibration/noise, action taken, and technician name or ID. 3. Common Symptoms and Troubleshooting Symptom Possible causes Initial checks Motor runs hot Blocked airflow, overload, phase imbalance, bearing friction Check ventilation, current on all phases, load condition, and bearing noise."
+  },
+  {
+    "source": "01_IM-45_Induction_Motor_Maintenance.pdf",
+    "page": 2,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 2 Symptom Possible causes Initial checks Excessive vibration Misalignment, loose mounting, bearing wear, imbalance Inspect base bolts, coupling alignment, and vibration trend. Motor does not start No supply, protection trip, control interlock, wiring fault Verify isolator state, protective-device status, and control permissives. Abnormal humming Voltage imbalance, loose connection, mechanical issue Check supply quality and isolated terminal condition. Repeated overload trip Load too high, mechanical binding, incorrect protection setting Check driven load and compare operating current with the intended rating. 4. Lubrication and Bearing Care Bearing lubrication should follow the bearing or motor manufacturer's specified lubricant type and quantity. Mixing different grease chemistries without confirmation is not reco"
+  },
+  {
+    "source": "01_IM-45_Induction_Motor_Maintenance.pdf",
+    "page": 2,
+    "chunk_id": 2,
+    "text": "follow the bearing or motor manufacturer's specified lubricant type and quantity. Mixing different grease chemistries without confirmation is not recommended. Do not add lubricant solely because a fixed calendar date has arrived. Use the manufacturer's interval, bearing type, operating temperature, speed, and environment as the basis. Signs that justify closer inspection include rising bearing temperature, high-frequency vibration, rough rotation, and abnormal noise. 5. Electrical Checks Before opening the terminal enclosure, isolate the equipment according to the site's electrical safety procedure and verify the absence of hazardous energy using approved methods. Record line-to-line current during normal operation. A growing difference between phases can indicate supply imbalance, connection problems, or unequal loading. Inspect cable glands and terminal connections for overheating, loo"
+  },
+  {
+    "source": "01_IM-45_Induction_Motor_Maintenance.pdf",
+    "page": 2,
+    "chunk_id": 3,
+    "text": "ween phases can indicate supply imbalance, connection problems, or unequal loading. Inspect cable glands and terminal connections for overheating, looseness, or damaged insulation. Do not re-energize equipment with exposed conductors or damaged insulation. 6. Quick Reference Key maintenance trigger: 500 operating hours for the synthetic condition-monitoring check. Key troubleshooting clue: high temperature plus restricted airflow points first toward cooling/ventilation checks, while high vibration points toward mechanical condition checks. Escalate to a qualified technician when electrical protection repeatedly trips, insulation appears damaged, or mechanical damage is suspected."
+  },
+  {
+    "source": "02_PLC-200_Operations_and_Troubleshooting.pdf",
+    "page": 1,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 1 PLC-200 Industrial Controller Operations and Troubleshooting Synthetic Industrial Reference Document | Version 1.0 This document is synthetic and was created specifically as a test knowledge base for a student RAG chatbot. It is not an OEM manual and should not be used as a real-world operating procedure. 1. PLC System Overview Equipment name: PLC-200 Training Controller. This synthetic document describes a generic PLC system consisting of a CPU, digital input module, digital output module, 24 V DC control supply, Ethernet port, and a basic operator panel. The PLC executes a cyclic program: read inputs, execute logic, update outputs, and perform communications/diagnostic tasks. 2. I/O Reference Address Signal Description I0.0 Start pushbutton Normally-open operator start input I0.1 Stop pushbutton Normally-closed"
+  },
+  {
+    "source": "02_PLC-200_Operations_and_Troubleshooting.pdf",
+    "page": 1,
+    "chunk_id": 2,
+    "text": "ostic tasks. 2. I/O Reference Address Signal Description I0.0 Start pushbutton Normally-open operator start input I0.1 Stop pushbutton Normally-closed stop-chain input representation I0.2 Emergency status Indicates emergency circuit healthy/open status per project wiring I0.3 Motor overload Indicates overload relay status Q0.0 Motor contactor Command to energize motor contactor Q0.1 Green lamp Indicates normal run/ready state Q0.2 Red lamp Indicates fault state 3. Control Logic A typical start circuit uses a start command, a healthy stop/emergency chain, and a motor-overload-ok signal before allowing the motor contactor output. A seal-in or latch function may be implemented so the motor remains commanded after the start pushbutton is released. The stop chain or a fault condition must remove the run command. Interlocks should be implemented for mutually exclusive machine states. For examp"
+  },
+  {
+    "source": "02_PLC-200_Operations_and_Troubleshooting.pdf",
+    "page": 1,
+    "chunk_id": 3,
+    "text": "ed. The stop chain or a fault condition must remove the run command. Interlocks should be implemented for mutually exclusive machine states. For example, two opposing actuators should not receive run commands simultaneously. 4. Troubleshooting Guide Problem Likely area to inspect Useful evidence Start button works but motor does not run Input status, interlock, overload, output status PLC input LEDs, logic monitor, output LED, contactor state PLC output LED is ON but actuator is OFF Wiring, fuse, relay/contactor, field device Measure/observe downstream device state following site safety rules"
+  },
+  {
+    "source": "02_PLC-200_Operations_and_Troubleshooting.pdf",
+    "page": 2,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 2 Problem Likely area to inspect Useful evidence Inputs appear stuck Sensor wiring, input module, field device Online I/O monitor and physical sensor state PLC in fault/stop state Program, hardware diagnostics, power supply, module status CPU diagnostic buffer and module LEDs Ethernet communication lost Cable, switch, IP settings, device state Link LEDs, ping/diagnostics, network configuration 5. Diagnostics and Good Programming Practice Use descriptive tag names instead of relying only on raw addresses. Example: Motor_Start_PB is easier to understand than I0.0. Document every interlock and alarm. An alarm should state the actual condition that prevents operation. Keep safety-critical functions separated from ordinary convenience logic when required by the machine's safety architecture. Use simulation or a test env"
+  },
+  {
+    "source": "02_PLC-200_Operations_and_Troubleshooting.pdf",
+    "page": 2,
+    "chunk_id": 2,
+    "text": "p safety-critical functions separated from ordinary convenience logic when required by the machine's safety architecture. Use simulation or a test environment before connecting new logic to physical machinery. 6. Example Questions This Document Can Answer Which input indicates motor overload? What does Q0.0 control? What conditions should be healthy before starting the motor? What should be checked when the PLC output is on but the actuator does not move? Why are descriptive tag names useful?"
+  },
+  {
+    "source": "03_CNC-300_Training_Mill_Operations_and_Safety.pdf",
+    "page": 1,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 1 CNC-300 Training Mill: Operations, Offsets, and Safety Synthetic Industrial Reference Document | Version 1.0 This document is synthetic and was created specifically as a test knowledge base for a student RAG chatbot. It is not an OEM manual and should not be used as a real-world operating procedure. 1. Machine Overview Machine name: CNC-300 Training Mill. This synthetic document describes a generic three-axis CNC milling machine used for student training. The machine includes a spindle, X/Y/Z axes, workholding fixture, coolant system, tool magazine, controller, and machine enclosure. 2. Operating Workflow The simplified workflow is: inspect machine condition -> install/verify workholding -> load the correct tool -> set work coordinate system -> load verified program -> dry-run or simulation check -> run the machi"
+  },
+  {
+    "source": "03_CNC-300_Training_Mill_Operations_and_Safety.pdf",
+    "page": 1,
+    "chunk_id": 2,
+    "text": "all/verify workholding -> load the correct tool -> set work coordinate system -> load verified program -> dry-run or simulation check -> run the machining operation -> inspect the finished part. Program files should be reviewed for correct coordinate system, tool selection, feed/speed intent, and safe machine moves before execution. Never bypass door interlocks or defeat protective guarding during normal operation. 3. Safety Checklist Check Requirement Guards Machine enclosure and guards are correctly positioned and functional. Workholding Workpiece is secure and does not interfere with tool travel. Tooling Correct tool is installed and properly seated. Program Correct program revision and coordinate system are verified. Emergency stop Emergency-stop function is available and understood by operators. Coolant/chips Coolant and chip-management arrangements are suitable for the operation. 4"
+  },
+  {
+    "source": "03_CNC-300_Training_Mill_Operations_and_Safety.pdf",
+    "page": 1,
+    "chunk_id": 3,
+    "text": "gency-stop function is available and understood by operators. Coolant/chips Coolant and chip-management arrangements are suitable for the operation. 4. Coordinate System and Offsets The work coordinate system defines where the part origin is located relative to the machine. A typical program may use a work offset such as G54; the exact code set depends on the controller. Tool length and diameter information must correspond to the actual tool loaded into the machine. A wrong work offset can produce a correct-looking program that cuts the wrong location. Always verify offsets before machining. 5. Troubleshooting"
+  },
+  {
+    "source": "03_CNC-300_Training_Mill_Operations_and_Safety.pdf",
+    "page": 2,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 2 Symptom Possible causes Checks Poor surface finish Wrong tool condition, vibration, unsuitable parameters Inspect tool, workholding, vibration, and program parameters. Incorrect part dimensions Wrong offset, tool wear, setup error Recheck work offset, tool data, and measurement results. Spindle will not start Interlock, tool condition, door state, controller alarm Read active alarms and verify machine permissives. Coolant not flowing Low level, pump/filter issue, selected mode Check coolant level, pump status, filter condition, and program command. 6. Preventive Maintenance Clean chips from the work area using the machine's approved chip-removal method. Do not place hands near moving or recently stopped tooling. Inspect lubrication and coolant systems according to the machine's maintenance plan. Record recurring"
+  },
+  {
+    "source": "03_CNC-300_Training_Mill_Operations_and_Safety.pdf",
+    "page": 2,
+    "chunk_id": 2,
+    "text": "hands near moving or recently stopped tooling. Inspect lubrication and coolant systems according to the machine's maintenance plan. Record recurring alarms rather than repeatedly resetting them without diagnosis."
+  },
+  {
+    "source": "04_Industrial_Electrical_Safety_Guide.pdf",
+    "page": 1,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 1 Industrial Electrical Safety and Energy Isolation Guide Synthetic Industrial Reference Document | Version 1.0 This document is synthetic and was created specifically as a test knowledge base for a student RAG chatbot. It is not an OEM manual and should not be used as a real-world operating procedure. 1. Industrial Electrical Safety Principles This synthetic reference presents general training concepts for industrial electrical safety. It does not replace site rules, regulatory requirements, qualified-person procedures, or manufacturer instructions. The primary principle is to prevent unexpected energization and contact with hazardous energy. 2. Isolation and Verification A basic safe-work sequence is: identify energy sources -> shut down the equipment -> isolate the energy source -> apply the site's lockout/tagou"
+  },
+  {
+    "source": "04_Industrial_Electrical_Safety_Guide.pdf",
+    "page": 1,
+    "chunk_id": 2,
+    "text": "ation A basic safe-work sequence is: identify energy sources -> shut down the equipment -> isolate the energy source -> apply the site's lockout/tagout controls -> verify isolation using approved procedures -> perform the work -> restore the system under controlled conditions. Verification should be performed using equipment and methods appropriate to the hazard and by personnel authorized by the site's safety program. Stored energy can remain after a supply is disconnected. Examples include capacitors, rotating parts, elevated mechanisms, pressure, and thermal energy. 3. Common Hazards Hazard Example Control concept Electrical energy Exposed conductor or energized panel Isolation, guarding, approved test methods, qualified personnel Mechanical energy Rotating shaft or moving axis Stop, isolate, block/secure as required Stored electrical energy Charged capacitor/DC bus Allow appropriate"
+  },
+  {
+    "source": "04_Industrial_Electrical_Safety_Guide.pdf",
+    "page": 1,
+    "chunk_id": 3,
+    "text": "ical energy Rotating shaft or moving axis Stop, isolate, block/secure as required Stored electrical energy Charged capacitor/DC bus Allow appropriate discharge time and verify safe state Thermal energy Hot motor or process line Cool down and verify temperature is safe Pneumatic/hydraulic energy Pressurized actuator Isolate supply and relieve stored pressure using approved procedure 4. Electrical Panel Inspection Look for obvious signs of overheating, discoloration, damaged insulation, contamination, loose covers, or unusual odor. Do not operate equipment with damaged guards or exposed hazardous parts. Repeated protective trips are a diagnostic signal; repeatedly resetting protection without identifying the cause can create additional risk. 5. Emergency Response In an emergency, follow the site's emergency procedure and contact trained responders. Do not touch a person who may still be in"
+  },
+  {
+    "source": "04_Industrial_Electrical_Safety_Guide.pdf",
+    "page": 1,
+    "chunk_id": 4,
+    "text": "5. Emergency Response In an emergency, follow the site's emergency procedure and contact trained responders. Do not touch a person who may still be in contact with an electrical source until the source has been made safe by appropriate means."
+  },
+  {
+    "source": "04_Industrial_Electrical_Safety_Guide.pdf",
+    "page": 2,
+    "chunk_id": 1,
+    "text": "Synthetic reference document - AI Industrial Chatbot student project Page 2 Report abnormal conditions such as smoke, arcing, repeated trips, damaged cables, or unexpected machine movement. 6. Training Questions What is the purpose of lockout/tagout? Why must stored energy be considered after isolation? What are three examples of non-electrical stored energy? What should happen when protective devices repeatedly trip? Why should machine guards and interlocks not be bypassed?"
+  }
+]
